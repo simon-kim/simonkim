@@ -6,3 +6,5 @@ I'll update it to AWS soon!
 
 Front-end was created using AngularJS, Browserify, and Bootstrap.
 Back-end was created using Node.js and Express.
+
+Testing will be added later!
