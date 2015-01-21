@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Simon Kim | Web Developer in Seattle</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/cover.css" rel="stylesheet">
+  <link href="css/typeout.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Simon Kim</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#/">Home</a></li>
+                <li><a href="#/about">About Me</a></li>
+                <li><a href="#/work">Work</a></li>
+                <li><a href="#/contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <img src="img/simon.jpg" class="img-responsive">
+          <h1 class="cover-heading">Hi, I'm Simon Kim.</h1>
+          <p class="lead">I am <span class="typeout">a web developer</span></p>
+          <script src="src/typeout.min.js"></script>
+          <script>
+            typeout('.typeout', ['an inspired engineer', 'a friend', 'a constant learner and teacher', 'just a simple web developer'], {
+              callback: function(el) {
+                console.log('calling the callback baby');
+                el.innerHTML += ".";
+              }
+            });</script>
+          <p class="lead">
+            <a href="#/contact" class="btn btn-lg btn-default">Get in Touch</a>
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <ul class="social">
+              <li><a href="https://facebook.com/stykk"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://github.com/simon-kim"><i class="fa fa-github-alt"></i></a></li>
+              <li><a href="https://linkedin.com/in/simontykim"><i class="fa fa-linkedin-square"></i></a></li>
+              <li><a href="http://instagram.com/simonnsayys"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <p>A portfolio website for <a href="http://linkedin.com/in/simontykim">Simon Kim</a>, by <a href="https://github.com/simon-kim">Simon Kim</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="app_bundle.js"></script>
+</body>
+</html>
