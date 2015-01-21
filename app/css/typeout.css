@@ -1,0 +1,56 @@
+.typeout {
+  color: #60DFE5;
+  text-shadow: 1px 1px 3px black;
+}
+.typeout:after {
+  -webkit-animation: 0.7s blink step-end infinite;
+  -moz-animation: 0.7s blink step-end infinite;
+  -ms-animation: 0.7s blink step-end infinite;
+  -o-animation: 0.7s blink step-end infinite;
+  animation: 0.7s blink step-end infinite;
+  content: '|';
+  padding-left: 2px;
+}
+.typeout.typeout-complete:after {
+  content: none;
+}
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+   }
+}
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes "blink" {
+  from,to {
+  opacity: 0;
+}
+  50% {
+    opacity: 1;
+ }
+}
+@-o-keyframes "blink" {
+  from,to {
+  opacity: 0;
+}
+  50% {
+    opacity: 1;
+ }
+}
