@@ -5,7 +5,7 @@ require('angular-route');
 
 var app = angular.module('simonApp', ['ngRoute']);
 
-app.config(['$routeProvider', function($routeProvider, $locationProvider) {
+app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/', {
     templateUrl: 'js/templates/home.html'
