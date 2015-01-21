@@ -16,7 +16,6 @@ module.exports = function(grunt) {
       app: ['app'],
       server: ['server'],
       tests: ['tests'],
-      scss: ['<%= project.app %>/sass/**/*.scss',  'app/sass/**/*.sass'],
       css: ['<%= project.app %>/**/*.css', '!<%= project.app %>/sass/**/*.*'],
       html: ['<%= project.app %>/**/*.html'],
       alljs: ['<%= project.app %>/js/**/*.js', '<%= project.server %>/**/*.js', '<%= project.tests %>/**/*.js', '!tests/angular_test_bundle.js']
@@ -38,14 +37,6 @@ module.exports = function(grunt) {
 
     simplemocha: {
       src: ['tests/api/*.js']
-    },
-
-    sass: {
-      dist: {
-        files: {
-          'app/sass/style.css': '<%= project.app %>/sass/style.scss'
-        }
-      }
     },
 
     browserify: {
