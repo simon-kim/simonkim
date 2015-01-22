@@ -10,6 +10,7 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 app.use(express.static(__dirname + '/build'));
 
+//Using Nodemailer for my "Contact" page.
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
@@ -18,6 +19,7 @@ var transporter = nodemailer.createTransport({
   }
 });
 
+//Sends me mail using nodemailer based on the text inputted in the boxes.
 app.post('/contact', function(req, res) {
   var mailOptions = {
     from: 'NAME <YOUR EMAIL>',
@@ -34,6 +36,7 @@ app.post('/contact', function(req, res) {
       console.log('Message sent: ' + info.response);
     }
   });
+  //Uses Ajax to show this message once successfully sent.
   res.send("Thanks! Your message has been sent.");
 });
 
