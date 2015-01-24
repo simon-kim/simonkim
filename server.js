@@ -1,5 +1,7 @@
 'use strict';
 
+require('newrelic');
+
 var express       = require('express');
 var bodyparser    = require('body-parser');
 var nodemailer    = require('nodemailer');
